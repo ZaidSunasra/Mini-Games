@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;   
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h6{
+    font-size: 2rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+img:hover{
+    scale: 1.1;
+    transition: 0.5s linear;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    display: block;
+    width: 100%;
+}
+
+.colored-section{
+    background-color: rgb(46, 204, 91);
+    color: white;
+}
+
+.white-section{
+    background-color: white;
+    color:rgb(46, 204, 91);
+}
+
+.cover-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+#gameSection{
+    min-height: 100vh;
+    padding: 2%;
+    text-align: center;
+}
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1%;
+    margin: 2%;
+}
+
+.game-card{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.game-img{
+    height: 80%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.game-title{
+    width: 100%;
+}
+
+.game-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+button{
+    border-radius: 10px;
+    width: 50%;
+    padding: 1%;
+}
