@@ -1,10 +1,8 @@
-"glide","house","aside","fried","igloo","photo","cried","slide","snake","tiger","fight","right","night","sight","lives",
-"knife","mouse","truck","about","alert","argue","beach",
-above	alike	arise	began
-abuse	alive	array	begin
-actor	allow	aside	begun
-acute	alone	asset	being
-admit	along	audio	below
+"glide","house","aside","fried","igloo","photo","cried","slide","snake","tiger","fight","right","night","sight","lives","knife","mouse","truck","about","alert","argue","beach","above",
+"alike","arise","began","abuse","alive","array","begin",
+"actor",	"allow",	"aside",	"begun",
+"acute",	"alone",	"asset",	"being",
+"admit", 	"along",	"audio",	"below",
 adopt	alter	audit	bench
 adult	among	avoid	billy
 after	anger	award	birth
