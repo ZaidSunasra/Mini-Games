@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notice{
+    font-size: 2.5rem;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: cyan;
+    width: max-content;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: bisque;
+    margin: 10px;
+   
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black{
+    border: solid 5px black;
+}
