@@ -1,5 +1,5 @@
-let player1 = "Blue";
-let player2 = "Red";
+let player1 = "Red";
+let player2 = "Yellow";
 let currentPlayer = player1;
 
 //Gravity Effect
@@ -92,12 +92,12 @@ function playerClick(){
 //Adding Color To Circle 
 function addColor(area){
     if(currentPlayer == player1){
-        document.getElementsByClassName("circle")[area].classList.add("blue");
+        document.getElementsByClassName("circle")[area].classList.add("red");
         currentPlayer = player2;
         document.getElementById("notice").textContent = `${currentPlayer} Plays`;
     }
     else{
-        document.getElementsByClassName("circle")[area].classList.add("red");
+        document.getElementsByClassName("circle")[area].classList.add("yellow");
         currentPlayer = player1;
         document.getElementById("notice").textContent = `${currentPlayer} Plays`;
     }
@@ -112,7 +112,7 @@ function checkWinner(){
         }
         if(temp[0] === temp[1] && temp[1] === temp[2] && temp[2] === temp[3] && temp[1] != undefined){
             if(currentPlayer == player1){
-                document.getElementById("notice").textContent = "Red Wins";
+                document.getElementById("notice").textContent = "Yellow Wins";
                 circle[winningCombination[i][0]].classList.add("black")
                 circle[winningCombination[i][1]].classList.add("black")
                 circle[winningCombination[i][2]].classList.add("black")
@@ -121,7 +121,7 @@ function checkWinner(){
                 break;
             }
             else{
-                document.getElementById("notice").textContent = "Blue Wins";
+                document.getElementById("notice").textContent = "Red Wins";
                 circle[winningCombination[i][0]].classList.add("black")
                 circle[winningCombination[i][1]].classList.add("black")
                 circle[winningCombination[i][2]].classList.add("black")
