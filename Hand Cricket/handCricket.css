@@ -16,7 +16,7 @@ body{
 h1{
     text-align: center;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 .colored-section{
@@ -36,34 +36,19 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .ui{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50%;
     width: 80%;
 }
 
-.userChoice{
-    height: 100%;
-    width: 25%;
-}
-
-.pcChoice{
-    height: 100%;
-    width: 25%;
-}
-
-.previousScore{
-    width: 15%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: bolder;
+.userChoice, .pcChoice{
+    height: 260px;
+    width: 165px;
 }
 
 img{
@@ -71,11 +56,21 @@ img{
     width: 100%;
 }
 
+.previousScore{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
 .notice{
     width: 80%;
     height: 10%;
-    font-size: 30px;
     font-weight: bolder;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +92,7 @@ img{
 
 .option{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     display: none;
@@ -119,16 +115,61 @@ img{
     color: antiquewhite;
 }
 
-.backButton{
-    position: absolute;
-    left: 0.5%;
-    top: 2%;
-    border-radius: 10px;
-    padding: 1%;
+@media (max-width:850px){
+    .select, .ui, .notice{
+        width: 100%;
+    } 
 }
 
-.backButton a{
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 20px;
+@media (max-width:750px){
+    .gameScreen{
+        width: 100vw;
+        height: 70vh;
+    }
+}
+
+@media (max-width:550px){
+    .previousScore{
+        font-size: 1.2rem;
+    }
+    .round{
+        width: 60px;
+        height: 60px;
+    }
+    .userChoice, .pcChoice{
+        width: 30%;
+        height: 100%;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .gameScreen{
+        height: 60vh;
+    }
+}
+
+@media (max-width:400px){
+    .round{
+        width: 45px;
+        height: 45px;
+    }
+    .gameScreen{
+        height: 50vh;
+    }
+    .previousScore{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:300px){
+    .round{
+        width: 40px;
+        height: 40px;
+    }
+    .gameScreen{
+        height: 45vh;
+    }
 }
